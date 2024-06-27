@@ -14,9 +14,9 @@ class Produtos(models.Model):
     qtd_produto = models.IntegerField()
     valor_produto = models.FloatField()
     data_vencimento_produto = models.DateField(auto_now_add=True)
-    img_produto = models.ImageField(upload_to='gerenciador_school/images/%Y/%m/%d/')
+    # img_produto = models.ImageField(upload_to='gerenciador_school/images/%Y/%m/%d/')
     categoria = models.ForeignKey(Categoria_produtos,on_delete=models.SET_NULL,null=True)
-    dono = models.ForeignKey(User,on_delete=models.SET_NULL,null=True)
+    # dono = models.ForeignKey(User,on_delete=models.SET_NULL,null=True)
                                   
     def __str__(self) -> str:
         return self.nome_produto
