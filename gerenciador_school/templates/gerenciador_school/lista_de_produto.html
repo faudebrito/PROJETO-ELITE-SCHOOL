@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+
+                <th>nome produto</th>
+                <th>preço produto</th>
+                <th>data produto</th>
+                <th>data validade</th>
+                <th>categoria</th>
+
+            </tr>
+            <tbody>
+
+                {%for produto in produtos%}
+                <tr>
+
+                    <th>{{produto.nome_produto}}</th>
+                    <th>{{produto.preço_produto}}</th>
+                    <th>{{produto.data_produto}}</th>
+                    <th>{{produto.data_validade}}</th>
+                    <th>{{produto.categoria}}</th>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </thead>
+    </table>
+
+</body>
+</html>

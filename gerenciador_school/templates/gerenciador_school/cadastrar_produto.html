@@ -7,7 +7,13 @@
 </head>
 <body>
 
-    <h1> página interna do gerenmciador - arquivo teste </h1>
+    <h1>Cadastro Produto</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Cadastrar</button>
+    </form>
     
 </body>
 </html>
